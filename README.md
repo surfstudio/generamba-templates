@@ -11,3 +11,17 @@ The detailed information about a template structure is available in [Generamba W
 ## List of templates
 
 * [Surf MVP module](https://github.com/surfstudio/generamba-templates/tree/master/surf_mvp_module) - generates a new module for **Surf MVP** architecture
+
+## Installation
+
+To install a template just put these strings in your `Rambafile` and run `generamba template install` in Terminal
+
+```
+### Catalogs
+catalogs:
+- 'https://github.com/surfstudio/generamba-templates'
+
+### Templates
+templates:
+- {name: needed_template_name}
+```
