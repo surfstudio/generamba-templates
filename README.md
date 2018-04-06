@@ -10,7 +10,9 @@ The detailed information about a template structure is available in [Generamba W
 
 ## List of templates
 
-* [Surf MVP module](https://github.com/surfstudio/generamba-templates/tree/master/surf_mvp_module) - generates a new module for **Surf MVP** architecture
+* [Surf MVP module](https://github.com/surfstudio/generamba-templates/tree/master/surf_mvp_module) - generates a new module of **Surf MVP** architecture
+
+* [Surf MVP Coordinatable module](https://github.com/surfstudio/generamba-templates/tree/master/surf_mvp_coordinatable_module) - generates a new module of architecture **Surf MVP** with routing using Coordinators.
 
 ## Installation
 
