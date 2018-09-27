@@ -14,6 +14,8 @@ The detailed information about a template structure is available in [Generamba W
 
 * [Surf MVP Coordinatable module](https://github.com/surfstudio/generamba-templates/tree/master/surf_mvp_coordinatable_module) - generates a new module of architecture **Surf MVP** with routing using Coordinators.
 
+* [Surf MVP Coordinatable Alert module](https://github.com/surfstudio/generamba-templates/tree/master/surf_mvp_coordinatable_alert) - generates a new alert module of architecture **Surf MVP** with routing using Coordinators.
+
 ## Installation
 
 To install a template just put these strings in your `Rambafile` and run `generamba template install` in Terminal
