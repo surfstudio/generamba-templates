@@ -11,15 +11,50 @@ import XCTest
 
 final class {{ module_info.name }}RouterTests: XCTestCase {
 
-	// MARK: - XCTestCase
+	// MARK: - Properties
+
+    private var view: MockModuleTransitionable?
+    private var router: {{ module_info.name }}Router?
+
+    // MARK: - XCTestCase
 
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        router = {{ module_info.name }}Router()
+        view = MockModuleTransitionable()
+        router?.view = view
     }
 
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
+        view = nil
+        router = nil
     }
+
+    // MARK: - Main tests
+
+    // MARK: - Mocks
+
+    private final class MockModuleTransitionable: ModuleTransitionable {
+
+        func showModule(_ module: UIViewController) {
+        }
+
+        func dismissView(animated: Bool, completion: (() -> Void)?) {
+        }
+
+        func presentModule(_ module: UIViewController, animated: Bool, completion: (() -> Void)?) {
+        }
+
+        func pop(animated: Bool) {
+        }
+
+        func push(module: UIViewController, animated: Bool) {
+        }
+
+        func push(module: UIViewController, animated: Bool, hideTabBar: Bool) {
+        }
+
+    }
+
 }
