@@ -33,21 +33,9 @@ final class {{ module_info.name }}ViewTests: XCTestCase {
 
     // MARK: - Main tests
 
-    func testThatViewNotifiesPresenterOnDidLoad() {
-        // when
-        self.view?.viewDidLoad()
-        // then
-        XCTAssert(self.output?.viewLoadedWasCalled == true)
-    }
-
     // MARK: - Mocks
 
-    final class {{ module_info.name }}ViewOutputMock: {{ module_info.name }}ViewOutput {
-        var viewLoadedWasCalled: Bool = false
-
-        func viewLoaded() {
-            viewLoadedWasCalled = true
-        }
+    private final class {{ module_info.name }}ViewOutputMock: {{ module_info.name }}ViewOutput {
     }
 
 }
