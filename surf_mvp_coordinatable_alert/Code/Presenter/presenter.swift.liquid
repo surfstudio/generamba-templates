@@ -6,7 +6,7 @@
 //  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
 //
 
-final class {{ module_info.name }}Presenter: {{ module_info.name }}ViewOutput, {{ module_info.name }}ModuleInput, {{ module_info.name }}ModuleOutput {
+final class {{ module_info.name }}Presenter: {{ module_info.name }}ModuleOutput {
 
     // MARK: - {{ module_info.name }}ModuleOutput
 
@@ -14,8 +14,14 @@ final class {{ module_info.name }}Presenter: {{ module_info.name }}ViewOutput, {
 
     weak var view: {{ module_info.name }}ViewInput?
 
-    // MARK: - {{ module_info.name }}ViewOutput
+}
 
-    // MARK: - {{ module_info.name }}ModuleInput
+// MARK: - {{ module_info.name }}ModuleInput
 
+extension {{ module_info.name }}Presenter: {{ module_info.name }}ModuleInput {
+}
+
+// MARK: - {{ module_info.name }}ViewOutput
+
+extension {{ module_info.name }}Presenter: {{ module_info.name }}ViewOutput {
 }

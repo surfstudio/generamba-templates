@@ -8,15 +8,12 @@
 
 import UIKit
 
-final class {{ module_info.name }}AlertConfigurator {
-
-    // MARK: - Internal methods
+final class {{ module_info.name }}ModuleConfigurator {
 
     func configure() -> ({{ module_info.name }}Controller, {{ module_info.name }}ModuleOutput) {
 
         // TODO: Change title and message
         let view = {{ module_info.name }}Controller(title: nil, message: nil, preferredStyle: .alert)
-
         let presenter = {{ module_info.name }}Presenter()
 
         presenter.view = view
