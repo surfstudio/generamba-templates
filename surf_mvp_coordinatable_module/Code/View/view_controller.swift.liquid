@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class {{ module_info.name }}ViewController: UIViewController, {{ module_info.name }}ViewInput {
+final class {{ module_info.name }}ViewController: UIViewController {
 
     // MARK: - Properties
 
@@ -21,10 +21,13 @@ final class {{ module_info.name }}ViewController: UIViewController, {{ module_in
         output?.viewLoaded()
     }
 
-    // MARK: - {{ module_info.name }}ViewInput
+}
+
+// MARK: - {{ module_info.name }}ViewInput
+
+extension {{ module_info.name }}ViewController: {{ module_info.name }}ViewInput {
 
     func setupInitialState() {
-
     }
 
 }

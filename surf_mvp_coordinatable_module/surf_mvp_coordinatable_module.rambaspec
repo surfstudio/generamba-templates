@@ -18,7 +18,7 @@ code_files:
 
 # View layer
 - {name: View/ViewController.swift, path: Code/View/view_controller.swift.liquid}
-- {name: View/ViewController.storyboard, path: Code/View/view_controller.storyboard.liquid}
+- {name: View/ViewController.xib, path: Code/View/view_controller.xib.liquid}
 - {name: View/ViewInput.swift,  path: Code/View/view_input.swift.liquid}
 - {name: View/ViewOutput.swift, path: Code/View/view_output.swift.liquid}
 
@@ -30,7 +30,7 @@ test_files:
 - {name: Configurator/ModuleConfiguratorTests.swift, path: Tests/Configurator/module_configurator_tests.swift.liquid}
 
 # Presenter tests
-- {name: Presenter/PresenterTests.swift, path: Tests/Presenter/presenter_tests.swift.liquid}
+#- {name: Presenter/PresenterTests.swift, path: Tests/Presenter/presenter_tests.swift.liquid}
 
 # View tests
-- {name: View/ViewTests.swift, path: Tests/View/view_tests.swift.liquid}
+#- {name: View/ViewTests.swift, path: Tests/View/view_tests.swift.liquid}

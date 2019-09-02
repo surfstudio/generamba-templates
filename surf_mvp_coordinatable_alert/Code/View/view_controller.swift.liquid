@@ -8,10 +8,15 @@
 
 import UIKit
 
-final class {{ module_info.name }}Controller: UIAlertController, {{ module_info.name }}ViewInput {
+final class {{ module_info.name }}Controller: UIAlertController {
 
     // MARK: - Properties
 
     var output: {{ module_info.name }}ViewOutput?
 
+}
+
+// MARK: - {{ module_info.name }}ViewInput
+
+extension {{ module_info.name }}Controller: {{ module_info.name }}ViewInput {
 }

@@ -20,3 +20,10 @@ code_files:
 - {name: View/Controller.swift, path: Code/View/view_controller.swift.liquid}
 - {name: View/ViewInput.swift,  path: Code/View/view_input.swift.liquid}
 - {name: View/ViewOutput.swift, path: Code/View/view_output.swift.liquid}
+
+# The declarations for test files
+
+test_files:
+
+# Configurators tests
+- {name: Configurator/ModuleConfiguratorTests.swift, path: Tests/Configurator/module_configurator_tests.swift.liquid}
