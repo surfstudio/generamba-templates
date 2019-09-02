@@ -9,3 +9,4 @@ license: "MIT"
 
 code_files:
 - {name: Coordinator.swift, path: Code/coordinator.swift.liquid}
+- {name: CoordinatorOutput.swift, path: Code/View/coordinator_output.swift.liquid}
