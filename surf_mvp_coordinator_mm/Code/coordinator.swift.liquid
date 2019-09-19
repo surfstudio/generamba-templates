@@ -1,0 +1,39 @@
+//
+//  {{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+public final class {{ module_info.name }}Coordinator: BaseCoordinator, {{ module_info.name }}CoordinatorOutput {
+
+    // MARK: - {{ module_info.name }}CoordinatorOutput
+
+    // MARK: - Private Properties
+
+    private let router: Router
+
+    // MARK: - Initialization
+
+    public init(router: Router) {
+        self.router = router
+        super.init()
+    }
+
+    // MARK: - Coordinator
+
+    override public func start(with deepLinkOption: DeepLinkOption?) {
+        showModule()
+    }
+
+}
+
+// MARK: - Private Methods
+
+private extension {{ module_info.name }}Coordinator {
+
+    func showModule() {
+    }
+
+}
