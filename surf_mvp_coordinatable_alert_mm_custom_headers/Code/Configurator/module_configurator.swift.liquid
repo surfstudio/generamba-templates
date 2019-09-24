@@ -1,0 +1,27 @@
+//
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import UIKit
+
+public final class {{ module_info.name }}ModuleConfigurator {
+
+    // MARK: - Initialization
+
+    public init() {}
+
+    // MARK: - Public Methods
+
+    public func configure() -> (UIAlertController, {{ module_info.name }}ModuleOutput) {
+
+        // TODO: Change title and message
+        let view = {{ module_info.name }}Controller(title: nil, message: nil, preferredStyle: .alert)
+        let presenter = {{ module_info.name }}Presenter()
+
+        presenter.view = view
+        view.output = presenter
+
+        return (view, presenter)
+    }
+
+}

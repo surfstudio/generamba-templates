@@ -1,0 +1,25 @@
+//
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import UIKit
+
+public final class {{ module_info.name }}ModuleConfigurator {
+
+    // MARK: - Initialization
+
+    public init() {}
+
+    // MARK: - Public Methods
+
+    public func configure() -> (UIViewController, {{ module_info.name }}ModuleOutput) {
+        let view = {{ module_info.name }}ViewController(nibName: {{ module_info.name }}ViewController.nameOfClass, bundle: Bundle(for: {{ module_info.name }}ViewController.self))
+        let presenter = {{ module_info.name }}Presenter()
+
+        presenter.view = view
+        view.output = presenter
+
+        return (view, presenter)
+    }
+
+}

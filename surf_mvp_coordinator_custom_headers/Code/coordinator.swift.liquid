@@ -1,0 +1,34 @@
+//
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+final class {{ module_info.name }}Coordinator: BaseCoordinator, {{ module_info.name }}CoordinatorOutput {
+
+    // MARK: - {{ module_info.name }}CoordinatorOutput
+
+    // MARK: - Private Properties
+
+    private let router: Router
+
+    // MARK: - Initialization
+
+    init(router: Router) {
+        self.router = router
+    }
+
+    // MARK: - Coordinator
+
+    override func start(with deepLinkOption: DeepLinkOption?) {
+        showModule()
+    }
+
+}
+
+// MARK: - Private Methods
+
+private extension {{ module_info.name }}Coordinator {
+
+    func showModule() {
+    }
+
+}

@@ -1,0 +1,20 @@
+//
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import XCTest
+import {{ custom_parameters.testTarget }}Flow
+@testable import {{ module_info.product_module_name }}
+
+final class {{ module_info.name }}ModuleConfiguratorTests: XCTestCase {
+
+    // MARK: - Main tests
+
+    func testDeallocation() {
+        assertDeallocation(of: {
+            let (view, output) = {{ module_info.name }}ModuleConfigurator().configure()
+            return (view, [output])
+        })
+    }
+
+}
