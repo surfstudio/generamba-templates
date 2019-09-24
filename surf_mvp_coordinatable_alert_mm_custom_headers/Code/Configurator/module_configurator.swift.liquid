@@ -1,8 +1,4 @@
 //
-//  {{ module_info.file_name }}
-//  {{ module_info.project_name }}
-//
-//  Created by {{ developer.name }} on {{ date }}.
 //  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
 //
 
@@ -16,8 +12,10 @@ public final class {{ module_info.name }}ModuleConfigurator {
 
     // MARK: - Public Methods
 
-    public func configure() -> (UIViewController, {{ module_info.name }}ModuleOutput) {
-        let view = {{ module_info.name }}ViewController(nibName: {{ module_info.name }}ViewController.nameOfClass, bundle: Bundle(for: {{ module_info.name }}ViewController.self))
+    public func configure() -> (UIAlertController, {{ module_info.name }}ModuleOutput) {
+
+        // TODO: Change title and message
+        let view = {{ module_info.name }}Controller(title: nil, message: nil, preferredStyle: .alert)
         let presenter = {{ module_info.name }}Presenter()
 
         presenter.view = view
