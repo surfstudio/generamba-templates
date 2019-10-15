@@ -17,7 +17,7 @@ public final class {{ module_info.name }}ModuleConfigurator {
     // MARK: - Public Methods
 
     public func configure() -> (UIViewController, {{ module_info.name }}ModuleOutput) {
-        let view = {{ module_info.name }}ViewController(nibName: {{ module_info.name }}ViewController.nameOfClass, bundle: Bundle(for: {{ module_info.name }}ViewController.self))
+        let view = {{ module_info.name }}ViewController(nibName: {{ module_info.name }}ViewController.className, bundle: Bundle(for: {{ module_info.name }}ViewController.self))
         let presenter = {{ module_info.name }}Presenter()
 
         presenter.view = view
