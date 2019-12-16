@@ -4,15 +4,14 @@
 
 import UIKit
 
-public final class {{ module_info.name }}ModuleConfigurator {
+typealias {{ module_info.name }}ModuleComponents = (
+    view: {{ module_info.name }}Controller,
+    output: {{ module_info.name }}ModuleOutput
+)
 
-    // MARK: - Initialization
+final class {{ module_info.name }}ModuleConfigurator {
 
-    public init() {}
-
-    // MARK: - Public Methods
-
-    public func configure() -> (UIAlertController, {{ module_info.name }}ModuleOutput) {
+    func configure() -> {{ module_info.name }}ModuleComponents {
 
         // TODO: Change title and message
         let view = {{ module_info.name }}Controller(title: nil, message: nil, preferredStyle: .alert)

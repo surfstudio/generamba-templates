@@ -10,6 +10,7 @@ license: "MIT"
 code_files:
 # Configurator
 - {name: Configurator/ModuleConfigurator.swift, path: Code/Configurator/module_configurator.swift.liquid}
+- {name: Configurator/ModuleTestConfigurator.swift, path: Code/Configurator/module_test_configurator.swift.liquid}
 
 # Presenter layer
 - {name: Presenter/Presenter.swift, path: Code/Presenter/presenter.swift.liquid}
@@ -27,7 +28,7 @@ code_files:
 test_files:
 
 # Configurators tests
-- {name: Configurator/ModuleConfiguratorTests.swift, path: Tests/Configurator/module_configurator_tests.swift.liquid}
+- {name: Configurator/ModuleDeallocationTests.swift, path: Tests/Configurator/module_deallocation_tests.swift.liquid}
 
 # Presenter tests
 #- {name: Presenter/PresenterTests.swift, path: Tests/Presenter/presenter_tests.swift.liquid}
