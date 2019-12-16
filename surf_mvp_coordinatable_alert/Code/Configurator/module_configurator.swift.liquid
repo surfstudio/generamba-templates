@@ -8,9 +8,14 @@
 
 import UIKit
 
+typealias {{ module_info.name }}ModuleComponents = (
+    view: {{ module_info.name }}Controller,
+    output: {{ module_info.name }}ModuleOutput
+)
+
 final class {{ module_info.name }}ModuleConfigurator {
 
-    func configure() -> ({{ module_info.name }}Controller, {{ module_info.name }}ModuleOutput) {
+    func configure() -> {{ module_info.name }}ModuleComponents {
 
         // TODO: Change title and message
         let view = {{ module_info.name }}Controller(title: nil, message: nil, preferredStyle: .alert)
